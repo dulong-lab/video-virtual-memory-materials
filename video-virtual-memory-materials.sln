@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{BBCDA5B4-0177-4C93-9C3B-CB473599AD7E}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.01.MemoryAddress", "01.01.MemoryAddress\01.01.MemoryAddress.vcxproj", "{BC6A1145-B40B-4DDC-808E-F28EE29124D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{79DFC8AA-2D4B-462A-B96D-14EC2AD2AB7A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\01.pptx = docs\01.pptx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x64.ActiveCfg = Debug|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x64.Build.0 = Debug|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x86.Build.0 = Debug|Win32
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x64.ActiveCfg = Release|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x64.Build.0 = Release|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x86.ActiveCfg = Release|Win32
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79DFC8AA-2D4B-462A-B96D-14EC2AD2AB7A} = {BBCDA5B4-0177-4C93-9C3B-CB473599AD7E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45CD0B5A-9504-4F68-872C-A6BC1B401BCD}
+	EndGlobalSection
+EndGlobal
