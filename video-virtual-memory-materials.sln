@@ -16,22 +16,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{79DFC8AA-2
 		docs\01.pptx = docs\01.pptx
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.01.HelloWord", "02.01.HelloWord\02.01.HelloWord.vcxproj", "{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|ARM64.ActiveCfg = Debug|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|ARM64.Build.0 = Debug|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x64.ActiveCfg = Debug|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x64.Build.0 = Debug|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x86.ActiveCfg = Debug|Win32
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Debug|x86.Build.0 = Debug|Win32
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|ARM64.ActiveCfg = Release|x64
+		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|ARM64.Build.0 = Release|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x64.ActiveCfg = Release|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x64.Build.0 = Release|x64
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x86.ActiveCfg = Release|Win32
 		{BC6A1145-B40B-4DDC-808E-F28EE29124D6}.Release|x86.Build.0 = Release|Win32
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|ARM64.Build.0 = Debug|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x64.ActiveCfg = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x64.Build.0 = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x64.Deploy.0 = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x86.ActiveCfg = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x86.Build.0 = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Debug|x86.Deploy.0 = Debug|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|ARM64.ActiveCfg = Release|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|ARM64.Build.0 = Release|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|ARM64.Deploy.0 = Release|ARM64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x64.ActiveCfg = Release|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x64.Build.0 = Release|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x64.Deploy.0 = Release|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x86.ActiveCfg = Release|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x86.Build.0 = Release|x64
+		{3C50FFE0-9A4A-4AAA-9940-71F787A1600B}.Release|x86.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

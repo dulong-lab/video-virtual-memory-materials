@@ -1,0 +1,77 @@
+;
+; 02.01.HelloWord.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=02.01.HelloWord.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+02.01.HelloWord_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+02.01.HelloWord.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%02.01.HelloWord.DeviceDesc%=02.01.HelloWord_Device, Root\02.01.HelloWord ; TODO: edit hw-id
+
+[02.01.HelloWord_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+02.01.HelloWord.sys
+
+;-------------- Service installation
+[02.01.HelloWord_Device.NT.Services]
+AddService = 02.01.HelloWord,%SPSVCINST_ASSOCSERVICE%, 02.01.HelloWord_Service_Inst
+
+; -------------- 02.01.HelloWord driver install sections
+[02.01.HelloWord_Service_Inst]
+DisplayName    = %02.01.HelloWord.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\02.01.HelloWord.sys
+
+;
+;--- 02.01.HelloWord_Device Coinstaller installation ------
+;
+
+[02.01.HelloWord_Device.NT.CoInstallers]
+AddReg=02.01.HelloWord_Device_CoInstaller_AddReg
+CopyFiles=02.01.HelloWord_Device_CoInstaller_CopyFiles
+
+[02.01.HelloWord_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[02.01.HelloWord_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[02.01.HelloWord_Device.NT.Wdf]
+KmdfService =  02.01.HelloWord, 02.01.HelloWord_wdfsect
+[02.01.HelloWord_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "02.01.HelloWord Installation Disk"
+02.01.HelloWord.DeviceDesc = "02.01.HelloWord Device"
+02.01.HelloWord.SVCDESC = "02.01.HelloWord Service"
