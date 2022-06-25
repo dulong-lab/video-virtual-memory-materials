@@ -7,7 +7,7 @@
 - 视频
   -  [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
 - 材料
-  - [PPT](docs/01.pptx)
+  - [PPT](Resources/01.pptx)
   - [Windows 上的驱动程序入门 / 虚拟地址空间](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/virtual-address-spaces)
 
 ## 02. 配置驱动开发环境
@@ -24,5 +24,5 @@
             - SHA256: 856ED08830A28F273A94C6A80D396FE221276A5F06D44B926BB8BC53AD7F03C1
     - [KmdKit by Four-F](http://four-f.narod.ru/)
         - [通过 Wayback Machine 下载（KmdKit.zip）](https://web.archive.org/web/20070327162529/http://www.freewebs.com/four-f/KmdKit/KmdKit.zip)
-        - [通过天翼云盘下载（KmdKit.zip）](https://cloud.189.cn/web/share?code=iai26rUzY3um) 访问码：6i6a
+        - [KmdKit.zip](Resources/KmdKit.zip)
             - SHA256: 08B4E2AC1006324AFA1936AF3436EAC2411E6CF1C6D4057A2A3790B82C468912
