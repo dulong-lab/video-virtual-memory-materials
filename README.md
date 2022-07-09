@@ -8,7 +8,7 @@
   -  [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
 - 材料
   - [PPT](Resources/01.pptx)
-  - [Windows 上的驱动程序入门 / 虚拟地址空间](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/virtual-address-spaces)
+  - [虚拟地址空间 - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/virtual-address-spaces)
 
 ## 02. 配置驱动开发环境
 - 视频
@@ -26,3 +26,14 @@
         - [通过 Wayback Machine 下载（KmdKit.zip）](https://web.archive.org/web/20070327162529/http://www.freewebs.com/four-f/KmdKit/KmdKit.zip)
         - [KmdKit.zip](Resources/KmdKit.zip)
             - SHA256: 08B4E2AC1006324AFA1936AF3436EAC2411E6CF1C6D4057A2A3790B82C468912
+
+## 03. 创建驱动模板
+- 视频
+  -  [bilibili](https://www.bilibili.com/video/BV1FB4y1W7Z8/)
+- 材料
+    - [用于项目和文件的模板 - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/zh-cn/visualstudio/ide/creating-project-and-item-templates?view=vs-2022)
+    - [Ntifs.h header - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/ddi/ntifs/)
+    - [Ntddk.h header - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/ddi/ntddk/)
+    - [Wdm.h header - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/ddi/wdm/)
+    - [once pragma | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/preprocessor/once?view=msvc-170)
+    - [Ntifs.h or ntddk.h ? — OSR](https://community.osr.com/discussion/283630/ntifs-h-or-ntddk-h)
