@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{A3B05822-DDF8-485F-A323-B922D8777C51}"
 	ProjectSection(SolutionItems) = preProject
 		Resources\01.pptx = Resources\01.pptx
+		Resources\Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes：1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4.pdf = Resources\Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes：1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4.pdf
 		Resources\KmdKit.zip = Resources\KmdKit.zip
 	EndProjectSection
 EndProject

@@ -3,6 +3,8 @@
 
 © 杜龙实验室。保留所有权利。
 
+软件、文档版权归原作者所有，提供链接仅为方便下载，如有侵权请立即与我们联系，我们将及时处理。
+
 ## 01. 简介
 - 视频
   -  [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
@@ -14,7 +16,6 @@
 - 视频
   -  [bilibili](https://www.bilibili.com/video/BV1wY4y1n77F/)
 - 材料
-    - 软件版权归原作者所有，提供链接仅为方便下载，如有侵权请立即与我们联系，我们将及时处理。
     - [开发工具下载页面（Visual Studio、SDK、WDK）](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/download-the-wdk)
     - [虚拟机下载页面（Virtual Box）](https://www.virtualbox.org/wiki/Downloads)
         - [通过天翼云盘下载（VirtualBox-6.1.34a-150636-Win.exe）](https://cloud.189.cn/web/share?code=n2mUJnueENfa) 访问码：oah3
@@ -37,3 +38,7 @@
     - [Wdm.h header - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/ddi/wdm/)
     - [once pragma | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/preprocessor/once?view=msvc-170)
     - [Ntifs.h or ntddk.h ? — OSR](https://community.osr.com/discussion/283630/ntifs-h-or-ntddk-h)
+
+## 04. 探索 CR4
+- 材料
+    - [Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes：1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4](Resources/Intel%C2%AE%2064%20and%20IA-32%20Architectures%20Software%20Developer%E2%80%99s%20Manual%20Combined%20Volumes%EF%BC%9A1,%202A,%202B,%202C,%202D,%203A,%203B,%203C,%203D,%20and%204.pdf)
