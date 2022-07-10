@@ -1,5 +1,5 @@
 ;
-; VmDriverTemplateV1.inf
+; $safeprojectname$.inf
 ;
 
 [Version]
@@ -7,19 +7,19 @@ Signature="$WINDOWS NT$"
 Class=System ; TODO: specify appropriate Class
 ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
 Provider=%ManufacturerName%
-CatalogFile=VmDriverTemplateV1.cat
+CatalogFile=$safeprojectname$.cat
 DriverVer= ; TODO: set DriverVer in stampinf property pages
 PnpLockdown=1
 
 [DestinationDirs]
 DefaultDestDir = 12
-VmDriverTemplateV1_Device_CoInstaller_CopyFiles = 11
+$safeprojectname$_Device_CoInstaller_CopyFiles = 11
 
 [SourceDisksNames]
 1 = %DiskName%,,,""
 
 [SourceDisksFiles]
-VmDriverTemplateV1.sys  = 1,,
+$projectname$.sys  = 1,,
 WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
 
 ;*****************************************
@@ -30,48 +30,48 @@ WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with
 %ManufacturerName%=Standard,NT$ARCH$
 
 [Standard.NT$ARCH$]
-%VmDriverTemplateV1.DeviceDesc%=VmDriverTemplateV1_Device, Root\VmDriverTemplateV1 ; TODO: edit hw-id
+%$safeprojectname$.DeviceDesc%=$safeprojectname$_Device, Root\$safeprojectname$ ; TODO: edit hw-id
 
-[VmDriverTemplateV1_Device.NT]
+[$safeprojectname$_Device.NT]
 CopyFiles=Drivers_Dir
 
 [Drivers_Dir]
-VmDriverTemplateV1.sys
+$projectname$.sys
 
 ;-------------- Service installation
-[VmDriverTemplateV1_Device.NT.Services]
-AddService = VmDriverTemplateV1,%SPSVCINST_ASSOCSERVICE%, VmDriverTemplateV1_Service_Inst
+[$safeprojectname$_Device.NT.Services]
+AddService = $safeprojectname$,%SPSVCINST_ASSOCSERVICE%, $safeprojectname$_Service_Inst
 
-; -------------- VmDriverTemplateV1 driver install sections
-[VmDriverTemplateV1_Service_Inst]
-DisplayName    = %VmDriverTemplateV1.SVCDESC%
+; -------------- $safeprojectname$ driver install sections
+[$safeprojectname$_Service_Inst]
+DisplayName    = %$safeprojectname$.SVCDESC%
 ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
-ServiceBinary  = %12%\VmDriverTemplateV1.sys
+ServiceBinary  = %12%\$safeprojectname$.sys
 
 ;
-;--- VmDriverTemplateV1_Device Coinstaller installation ------
+;--- $safeprojectname$_Device Coinstaller installation ------
 ;
 
-[VmDriverTemplateV1_Device.NT.CoInstallers]
-AddReg=VmDriverTemplateV1_Device_CoInstaller_AddReg
-CopyFiles=VmDriverTemplateV1_Device_CoInstaller_CopyFiles
+[$safeprojectname$_Device.NT.CoInstallers]
+AddReg=$safeprojectname$_Device_CoInstaller_AddReg
+CopyFiles=$safeprojectname$_Device_CoInstaller_CopyFiles
 
-[VmDriverTemplateV1_Device_CoInstaller_AddReg]
+[$safeprojectname$_Device_CoInstaller_AddReg]
 HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
 
-[VmDriverTemplateV1_Device_CoInstaller_CopyFiles]
+[$safeprojectname$_Device_CoInstaller_CopyFiles]
 WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
 
-[VmDriverTemplateV1_Device.NT.Wdf]
-KmdfService =  VmDriverTemplateV1, VmDriverTemplateV1_wdfsect
-[VmDriverTemplateV1_wdfsect]
+[$safeprojectname$_Device.NT.Wdf]
+KmdfService =  $safeprojectname$, $safeprojectname$_wdfsect
+[$safeprojectname$_wdfsect]
 KmdfLibraryVersion = $KMDFVERSION$
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
 ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
-DiskName = "VmDriverTemplateV1 Installation Disk"
-VmDriverTemplateV1.DeviceDesc = "VmDriverTemplateV1 Device"
-VmDriverTemplateV1.SVCDESC = "VmDriverTemplateV1 Service"
+DiskName = "$safeprojectname$ Installation Disk"
+$safeprojectname$.DeviceDesc = "$safeprojectname$ Device"
+$safeprojectname$.SVCDESC = "$safeprojectname$ Service"
