@@ -1,0 +1,77 @@
+;
+; _04_02_CR4Asm.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=_04_02_CR4Asm.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+_04_02_CR4Asm_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+04.02.CR4Asm.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%_04_02_CR4Asm.DeviceDesc%=_04_02_CR4Asm_Device, Root\_04_02_CR4Asm ; TODO: edit hw-id
+
+[_04_02_CR4Asm_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+04.02.CR4Asm.sys
+
+;-------------- Service installation
+[_04_02_CR4Asm_Device.NT.Services]
+AddService = _04_02_CR4Asm,%SPSVCINST_ASSOCSERVICE%, _04_02_CR4Asm_Service_Inst
+
+; -------------- _04_02_CR4Asm driver install sections
+[_04_02_CR4Asm_Service_Inst]
+DisplayName    = %_04_02_CR4Asm.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\_04_02_CR4Asm.sys
+
+;
+;--- _04_02_CR4Asm_Device Coinstaller installation ------
+;
+
+[_04_02_CR4Asm_Device.NT.CoInstallers]
+AddReg=_04_02_CR4Asm_Device_CoInstaller_AddReg
+CopyFiles=_04_02_CR4Asm_Device_CoInstaller_CopyFiles
+
+[_04_02_CR4Asm_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[_04_02_CR4Asm_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[_04_02_CR4Asm_Device.NT.Wdf]
+KmdfService =  _04_02_CR4Asm, _04_02_CR4Asm_wdfsect
+[_04_02_CR4Asm_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "_04_02_CR4Asm Installation Disk"
+_04_02_CR4Asm.DeviceDesc = "_04_02_CR4Asm Device"
+_04_02_CR4Asm.SVCDESC = "_04_02_CR4Asm Service"
