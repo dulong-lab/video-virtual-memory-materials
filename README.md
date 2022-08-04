@@ -47,7 +47,15 @@
         - [Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes：1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4.pdf](Resources/Intel%C2%AE%2064%20and%20IA-32%20Architectures%20Software%20Developer%E2%80%99s%20Manual%20Combined%20Volumes%EF%BC%9A1,%202A,%202B,%202C,%202D,%203A,%203B,%203C,%203D,%20and%204.pdf)
             - SHA256: 105D78AB9C041D6BBC56EA422BD7D71CD57B8D94D89794666DB93707E68C5DCD
 
-## 05. 打印页表
+## 05. 探索页表
+- 视频
+  -  [bilibili](https://www.bilibili.com/video/BV1vG411b7ep/)
+- 材料
+  - [PPT](Resources/05.pptx)
+  - [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
+  - [D3.js - Data-Driven Documents](https://d3js.org/)
+  - [be5invis/Sarasa-Gothic | 更纱黑体](https://github.com/be5invis/Sarasa-Gothic)
+  
 ## 06. 探索进程对象
 ## 07. 映射内存
 ## 08. 写时复制
