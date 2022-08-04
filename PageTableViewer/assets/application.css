@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Sarasa Mono SC";
+  src: url("sarasa-mono-sc-regular.ttf");
+}
+
+@font-face {
+  font-family: "Sarasa Mono SC";
+  src: url("sarasa-mono-sc-bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: "Sarasa Mono SC";
+}
+
+body > svg {
+  display: block;
+  text-anchor: start;
+  dominant-baseline: text-before-edge;
+}
+
+body > svg .graph-node {
+  white-space: pre;
+}
+
+body > svg .graph-node .header-text {
+  font-size: 18px;
+  fill: #fff;
+  font-weight: bold;
+}
+
+body > svg .graph-node > .background {
+  fill: #fff;
+  stroke: #aaa;
+  stroke-width: 5;
+  paint-order: stroke;
+  rx: 5px;
+  overflow: hidden;
+}
+
+body > svg .graph-node .row .key {
+  fill: #444;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body > svg .graph-node .row .value {
+  fill: #444;
+  font-size: 14px;
+}
+
+body > svg .graph-node .row .divider {
+  fill: #aaa;
+}
+
+body > svg .graph-link .line {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 1px;
+}
+
+body > svg .graph-link .point {
+  fill: #fff;
+  stroke: #aaa;
+  stroke-width: 2px;
+  r: 4px;
+}
+
+body > svg .graph-link.selected .line {
+  stroke: #f46d43;
+  stroke-width: 3px;
+}

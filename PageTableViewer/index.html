@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Table Viewer</title>
+    <link rel="stylesheet" href="assets/application.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <svg></svg>
+    <script src="data.js"></script>
+    <script src="assets/d3.v7.min.js"></script>
+    <script src="assets/graph-node.js"></script>
+    <script src="assets/graph-link.js"></script>
+    <script src="assets/application.js"></script>
+    <script>
+      if (typeof data !== "undefined") main(data);
+    </script>
+  </body>
+</html>

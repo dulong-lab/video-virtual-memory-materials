@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "main": "application.js",
+  "dependencies": {
+    "@types/d3": "^7.4.0"
+  }
+}

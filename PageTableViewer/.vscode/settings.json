@@ -1,0 +1,10 @@
+{
+  "css.lint.validProperties": ["dominant-baseline", "rx", "r"],
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    ".vscode": true,
+    "assets": true
+  }
+}
