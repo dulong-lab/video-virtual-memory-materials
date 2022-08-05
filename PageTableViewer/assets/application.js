@@ -90,10 +90,14 @@ function main(data) {
     .filter(({ ctrlKey, type, button }) => !ctrlKey && (type === "wheel" || button === 1));
   svg.call(zoom).on("dblclick.zoom", null);
 
-  d3.select("body").on("keydown", ({ key }) => {
-    if (key !== "Delete") return;
-    GraphLink.deselectAll();
-  });
+  d3.select(window)
+    .on("keydown", ({ key }) => {
+      if (key !== "Delete") return;
+      GraphLink.deselectAll();
+    })
+    .on("resize", () => {
+      svg.attr("width", innerWidth).attr("height", innerHeight);
+    });
 
   const [nodes, links] = parseData(root, data, [
     "#5e4fa2",
