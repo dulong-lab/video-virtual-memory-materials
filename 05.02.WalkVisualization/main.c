@@ -121,7 +121,7 @@ DriverEntry(PDRIVER_OBJECT  DriverObject, PUNICODE_STRING RegistryPath)
                 for (int n4 = 0; n4 < 512; n4++)
                 {
                     if (!L4pt[n4].Fields.P || !L4pt[n4].Fields.U_S) continue;
-                    PA Pa = { .Fields2MB.PPN = L3pt[n3].Fields2MB.PPN };
+                    PA Pa = { .Fields4KB.PPN = L4pt[n4].Fields.PPN };
                     DbgPrint("['%03d','"
                         "Value=0x%016I64X\\n"
                         "    R/W=%I64d\\n"
