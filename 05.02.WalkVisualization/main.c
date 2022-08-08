@@ -55,7 +55,7 @@ DriverEntry(PDRIVER_OBJECT  DriverObject, PUNICODE_STRING RegistryPath)
                     "    R/W=%I64d\\n"
                     "     PS=%I64d\\n"
                     "    PPN=0x%016I64X\\n"
-                    "     Pa=0x%016I64X',"
+                    "     Pa=0x%016I64X'],"
                     , n2
                     , L2pt[n2].Value
                     , L1pt[n1].Fields.R_W
@@ -92,7 +92,7 @@ DriverEntry(PDRIVER_OBJECT  DriverObject, PUNICODE_STRING RegistryPath)
                         "    R/W=%I64d\\n"
                         "     PS=%I64d\\n"
                         "    PPN=0x%016I64X\\n"
-                        "     Pa=0x%016I64X',"
+                        "     Pa=0x%016I64X'],"
                         , n3
                         , L3pt[n3].Value
                         , L3pt[n3].Fields.R_W
