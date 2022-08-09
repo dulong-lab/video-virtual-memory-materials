@@ -1,0 +1,77 @@
+;
+; _06_03_DumpPageTable.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=_06_03_DumpPageTable.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+_06_03_DumpPageTable_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+06.03.DumpPageTable.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%_06_03_DumpPageTable.DeviceDesc%=_06_03_DumpPageTable_Device, Root\_06_03_DumpPageTable ; TODO: edit hw-id
+
+[_06_03_DumpPageTable_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+06.03.DumpPageTable.sys
+
+;-------------- Service installation
+[_06_03_DumpPageTable_Device.NT.Services]
+AddService = _06_03_DumpPageTable,%SPSVCINST_ASSOCSERVICE%, _06_03_DumpPageTable_Service_Inst
+
+; -------------- _06_03_DumpPageTable driver install sections
+[_06_03_DumpPageTable_Service_Inst]
+DisplayName    = %_06_03_DumpPageTable.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\_06_03_DumpPageTable.sys
+
+;
+;--- _06_03_DumpPageTable_Device Coinstaller installation ------
+;
+
+[_06_03_DumpPageTable_Device.NT.CoInstallers]
+AddReg=_06_03_DumpPageTable_Device_CoInstaller_AddReg
+CopyFiles=_06_03_DumpPageTable_Device_CoInstaller_CopyFiles
+
+[_06_03_DumpPageTable_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[_06_03_DumpPageTable_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[_06_03_DumpPageTable_Device.NT.Wdf]
+KmdfService =  _06_03_DumpPageTable, _06_03_DumpPageTable_wdfsect
+[_06_03_DumpPageTable_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "_06_03_DumpPageTable Installation Disk"
+_06_03_DumpPageTable.DeviceDesc = "_06_03_DumpPageTable Device"
+_06_03_DumpPageTable.SVCDESC = "_06_03_DumpPageTable Service"
