@@ -56,7 +56,10 @@
   - [D3.js - Data-Driven Documents](https://d3js.org/)
   - [be5invis/Sarasa-Gothic | 更纱黑体](https://github.com/be5invis/Sarasa-Gothic)
   
-## 06. 探索进程对象
+## 06. 手工翻译地址
+- 视频
+  -  [bilibili](https://www.bilibili.com/video/BV1iv4y1F78U/)
+
 ## 07. 映射内存
 ## 08. 写时复制
 ## 09. 保护数据
