@@ -1,0 +1,77 @@
+;
+; _07_01_VaToPa.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=_07_01_VaToPa.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+_07_01_VaToPa_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+07.01.VaToPa.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%_07_01_VaToPa.DeviceDesc%=_07_01_VaToPa_Device, Root\_07_01_VaToPa ; TODO: edit hw-id
+
+[_07_01_VaToPa_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+07.01.VaToPa.sys
+
+;-------------- Service installation
+[_07_01_VaToPa_Device.NT.Services]
+AddService = _07_01_VaToPa,%SPSVCINST_ASSOCSERVICE%, _07_01_VaToPa_Service_Inst
+
+; -------------- _07_01_VaToPa driver install sections
+[_07_01_VaToPa_Service_Inst]
+DisplayName    = %_07_01_VaToPa.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\_07_01_VaToPa.sys
+
+;
+;--- _07_01_VaToPa_Device Coinstaller installation ------
+;
+
+[_07_01_VaToPa_Device.NT.CoInstallers]
+AddReg=_07_01_VaToPa_Device_CoInstaller_AddReg
+CopyFiles=_07_01_VaToPa_Device_CoInstaller_CopyFiles
+
+[_07_01_VaToPa_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[_07_01_VaToPa_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[_07_01_VaToPa_Device.NT.Wdf]
+KmdfService =  _07_01_VaToPa, _07_01_VaToPa_wdfsect
+[_07_01_VaToPa_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "_07_01_VaToPa Installation Disk"
+_07_01_VaToPa.DeviceDesc = "_07_01_VaToPa Device"
+_07_01_VaToPa.SVCDESC = "_07_01_VaToPa Service"
