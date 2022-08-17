@@ -60,7 +60,14 @@
 - 视频
   -  [bilibili](https://www.bilibili.com/video/BV1iv4y1F78U/)
 
-## 07. 映射内存
-## 08. 写时复制
-## 09. 保护数据
-## 10. 熔断
+## 07. 编程翻译地址
+- 视频
+  -  [bilibili](https://www.bilibili.com/video/BV1QN4y1G7zv/)
+- 材料
+  - [PPT](Resources/07.pptx)
+
+## 08. 映射内存
+## 09. 映射页表
+## 10. 写时复制
+## 11. 保护数据
+## 12. 熔断
