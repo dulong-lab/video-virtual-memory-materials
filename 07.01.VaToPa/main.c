@@ -33,5 +33,6 @@ DriverEntry(PDRIVER_OBJECT  DriverObject, PUNICODE_STRING RegistryPath)
     Status = VaToPa(Process, Va3, &Pa3);
     if (NT_SUCCESS(Status)) DbgPrint("Va3 0x%016I64X => Pa3 0x%016I64X\n", Va3.Value, Pa3.Value);
 
+    ObDereferenceObject(Process);
     return STATUS_SUCCESS;
 }
