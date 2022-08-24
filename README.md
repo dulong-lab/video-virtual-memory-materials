@@ -66,7 +66,13 @@
 - 材料
   - [PPT](Resources/07.pptx)
 
-## 08. 映射内存
+## 08. 内存共享
+- 视频
+  -  [bilibili](https://www.bilibili.com/video/BV1MN4y1c7nX/)
+- 材料
+  - [PPT](Resources/08.pptx)
+  - [try-except statement (C) | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/c-language/try-except-statement-c)
+
 ## 09. 映射页表
 ## 10. 写时复制
 ## 11. 保护数据
