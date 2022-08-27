@@ -15,7 +15,8 @@
 
 ## 02. 配置驱动开发环境
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1wY4y1n77F/)
+  - [bilibili](https://www.bilibili.com/video/BV1wY4y1n77F/)
+  - [YouTube](https://youtu.be/ywMCQYVThj4)
 - 材料
     - [开发工具下载页面（Visual Studio、SDK、WDK）](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/download-the-wdk)
     - [虚拟机下载页面（Virtual Box）](https://www.virtualbox.org/wiki/Downloads)
