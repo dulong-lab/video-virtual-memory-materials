@@ -7,7 +7,8 @@
 
 ## 01. 简介
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
+  - [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
+  - [YouTube](https://youtu.be/JNY-7zWGhOg)
 - 材料
   - [PPT](Resources/01.pptx)
   - [虚拟地址空间 - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/virtual-address-spaces)
