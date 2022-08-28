@@ -32,7 +32,8 @@
 
 ## 03. 创建驱动模板
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1FB4y1W7Z8/)
+  - [bilibili](https://www.bilibili.com/video/BV1FB4y1W7Z8/)
+  - [YouTube](https://youtu.be/3moyxuQEOaQ)
 - 材料
     - [用于项目和文件的模板 - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/zh-cn/visualstudio/ide/creating-project-and-item-templates?view=vs-2022)
     - [Ntifs.h header - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/ddi/ntifs/)
