@@ -44,7 +44,8 @@
 
 ## 04. 探索 CR4
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1Ar4y1E7TH/)
+  - [bilibili](https://www.bilibili.com/video/BV1Ar4y1E7TH/)
+  - [YouTube](https://youtu.be/IOmyMX6ZZy4)
 - 材料
     - [Intel® 64 and IA-32 Architectures Software Developer Manuals ](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
         - [Intel® 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes：1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D, and 4.pdf](Resources/Intel%C2%AE%2064%20and%20IA-32%20Architectures%20Software%20Developer%E2%80%99s%20Manual%20Combined%20Volumes%EF%BC%9A1,%202A,%202B,%202C,%202D,%203A,%203B,%203C,%203D,%20and%204.pdf)
