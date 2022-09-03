@@ -62,7 +62,8 @@
   
 ## 06. 手工翻译地址
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1iv4y1F78U/)
+  - [bilibili](https://www.bilibili.com/video/BV1iv4y1F78U/)
+  - [YouTube](https://youtu.be/eepRnrliDhY)
 
 ## 07. 编程翻译地址
 - 视频
