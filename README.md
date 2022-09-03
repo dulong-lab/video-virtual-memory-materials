@@ -77,7 +77,12 @@
   - [PPT](Resources/08.pptx)
   - [try-except statement (C) | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/c-language/try-except-statement-c)
 
-## 09. 映射页表
+## 09. 自映射 前篇
+- 视频
+  - [bilibili](https://www.bilibili.com/video/BV1iY4y1T7F2/)
+- 材料
+  - [PPT](Resources/09.pptx)
+
 ## 10. 写时复制
 ## 11. 保护数据
 ## 12. 熔断
