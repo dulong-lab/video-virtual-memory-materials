@@ -84,6 +84,13 @@
 - 材料
   - [PPT](Resources/09.pptx)
 
-## 10. 写时复制
-## 11. 保护数据
-## 12. 熔断
+## 10. 自映射 后篇
+- 视频
+  - [bilibili](https://www.bilibili.com/video/BV1k14y1s7Aw/)
+- 材料
+  - [PPT](Resources/10.pptx)
+  - [Alex Ionescu on Twitter: "Redstone Build 14332 now adds MiRebaseDynamicRelocationRegions, and fully dynamic PTE/PDE/PXE base, with a call to SecureKernel/VSM." / Twitter](https://twitter.com/aionescu/status/725388108187852800)
+
+## 11. 写时复制
+## 12. 保护数据
+## 13. 熔断
