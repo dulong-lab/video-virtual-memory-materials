@@ -77,6 +77,7 @@
 - 材料
   - [PPT](Resources/08.pptx)
   - [try-except statement (C) | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/c-language/try-except-statement-c)
+  - [Alex Ionescu on Twitter: "PatchGuard (and Mm) in RS5 will make short work of people messing around with PTE-based modifications thanks to MmCheckProcessShadow &amp; friends (MiCheckRelevantKernelShadows, etc). Looking forward to the lowering of the success of these types of attacks." / Twitter](https://twitter.com/aionescu/status/992260939574534144)
 
 ## 09. 自映射 前篇
 - 视频
