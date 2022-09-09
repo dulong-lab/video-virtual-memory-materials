@@ -1,0 +1,77 @@
+;
+; _10_01_SelfMapping.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=_10_01_SelfMapping.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+_10_01_SelfMapping_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+10.01.SelfMapping.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%_10_01_SelfMapping.DeviceDesc%=_10_01_SelfMapping_Device, Root\_10_01_SelfMapping ; TODO: edit hw-id
+
+[_10_01_SelfMapping_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+10.01.SelfMapping.sys
+
+;-------------- Service installation
+[_10_01_SelfMapping_Device.NT.Services]
+AddService = _10_01_SelfMapping,%SPSVCINST_ASSOCSERVICE%, _10_01_SelfMapping_Service_Inst
+
+; -------------- _10_01_SelfMapping driver install sections
+[_10_01_SelfMapping_Service_Inst]
+DisplayName    = %_10_01_SelfMapping.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\_10_01_SelfMapping.sys
+
+;
+;--- _10_01_SelfMapping_Device Coinstaller installation ------
+;
+
+[_10_01_SelfMapping_Device.NT.CoInstallers]
+AddReg=_10_01_SelfMapping_Device_CoInstaller_AddReg
+CopyFiles=_10_01_SelfMapping_Device_CoInstaller_CopyFiles
+
+[_10_01_SelfMapping_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[_10_01_SelfMapping_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[_10_01_SelfMapping_Device.NT.Wdf]
+KmdfService =  _10_01_SelfMapping, _10_01_SelfMapping_wdfsect
+[_10_01_SelfMapping_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "_10_01_SelfMapping Installation Disk"
+_10_01_SelfMapping.DeviceDesc = "_10_01_SelfMapping Device"
+_10_01_SelfMapping.SVCDESC = "_10_01_SelfMapping Service"

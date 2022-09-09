@@ -52,6 +52,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.02.Playground", "08.02.P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.03.ShareMemory", "08.03.ShareMemory\08.03.ShareMemory.vcxproj", "{367B866E-8935-477E-BC19-BC8432BD0D24}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.01.SelfMapping", "10.01.SelfMapping\10.01.SelfMapping.vcxproj", "{35A0051C-AC0C-4441-BBFE-467BD594ADA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -296,6 +298,24 @@ Global
 		{367B866E-8935-477E-BC19-BC8432BD0D24}.Release|x86.ActiveCfg = Release|x64
 		{367B866E-8935-477E-BC19-BC8432BD0D24}.Release|x86.Build.0 = Release|x64
 		{367B866E-8935-477E-BC19-BC8432BD0D24}.Release|x86.Deploy.0 = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|ARM64.Build.0 = Debug|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x64.ActiveCfg = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x64.Build.0 = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x64.Deploy.0 = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x86.ActiveCfg = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x86.Build.0 = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Debug|x86.Deploy.0 = Debug|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|ARM64.ActiveCfg = Release|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|ARM64.Build.0 = Release|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|ARM64.Deploy.0 = Release|ARM64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x64.ActiveCfg = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x64.Build.0 = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x64.Deploy.0 = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x86.ActiveCfg = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x86.Build.0 = Release|x64
+		{35A0051C-AC0C-4441-BBFE-467BD594ADA8}.Release|x86.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
