@@ -7,7 +7,7 @@
 
 ## 01. 简介
 - 视频
-  - [bilibili](https://www.bilibili.com/video/BV1Ar4y1g7DX/)
+  - [bilibili](https://www.bilibili.com/video/BV1cT411F7f4/)
   - [YouTube](https://youtu.be/JNY-7zWGhOg)
 - 材料
   - [PPT](Resources/01.pptx)
