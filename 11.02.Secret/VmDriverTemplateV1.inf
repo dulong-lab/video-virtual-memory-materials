@@ -1,0 +1,77 @@
+;
+; _11_02_Secret.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=_11_02_Secret.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+_11_02_Secret_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+11.02.Secret.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%_11_02_Secret.DeviceDesc%=_11_02_Secret_Device, Root\_11_02_Secret ; TODO: edit hw-id
+
+[_11_02_Secret_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+11.02.Secret.sys
+
+;-------------- Service installation
+[_11_02_Secret_Device.NT.Services]
+AddService = _11_02_Secret,%SPSVCINST_ASSOCSERVICE%, _11_02_Secret_Service_Inst
+
+; -------------- _11_02_Secret driver install sections
+[_11_02_Secret_Service_Inst]
+DisplayName    = %_11_02_Secret.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\_11_02_Secret.sys
+
+;
+;--- _11_02_Secret_Device Coinstaller installation ------
+;
+
+[_11_02_Secret_Device.NT.CoInstallers]
+AddReg=_11_02_Secret_Device_CoInstaller_AddReg
+CopyFiles=_11_02_Secret_Device_CoInstaller_CopyFiles
+
+[_11_02_Secret_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[_11_02_Secret_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[_11_02_Secret_Device.NT.Wdf]
+KmdfService =  _11_02_Secret, _11_02_Secret_wdfsect
+[_11_02_Secret_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "_11_02_Secret Installation Disk"
+_11_02_Secret.DeviceDesc = "_11_02_Secret Device"
+_11_02_Secret.SVCDESC = "_11_02_Secret Service"
