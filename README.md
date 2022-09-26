@@ -92,6 +92,17 @@
   - [PPT](Resources/10.pptx)
   - [Alex Ionescu on Twitter: "Redstone Build 14332 now adds MiRebaseDynamicRelocationRegions, and fully dynamic PTE/PDE/PXE base, with a call to SecureKernel/VSM." / Twitter](https://twitter.com/aionescu/status/725388108187852800)
 
-## 11. 写时复制
-## 12. 保护数据
-## 13. 熔断
+## 11. 熔断
+- 视频
+  - [bilibili](https://www.bilibili.com/video/BV1qV4y1T7Gz/)
+- 材料
+  - [PPT](Resources/11.pptx)
+  - [InSpectre.exe](https://www.grc.com/inspectre.htm)
+  - [Meltdown and Spectre](https://meltdownattack.com/)
+  - [Meltdown Paper](https://meltdownattack.com/meltdown.pdf)
+      - [GitHub - IAIK/meltdown](https://github.com/IAIK/meltdown)
+      - ["Meltdown"是什么？ - 知乎（论文中文翻译，第 6 小节不一样，可能不是最新）](https://zhuanlan.zhihu.com/p/33621030)
+  - [Windows で Meltdown する - Qiita](https://qiita.com/msmania/items/794e3dbe82db86c4c4e6)
+      - [GitHub - msmania/microarchitectural-attack](https://github.com/msmania/microarchitectural-attack)
+  - [Black Hat USA 2018 - Meltdown Basics, Details, Consequences - YouTube](https://www.youtube.com/watch?v=Njgoed0lv0A)
+  - [ADV180002 - 安全更新程序指南 - Microsoft - 用于缓解推理执行边信道漏洞的指南](https://msrc.microsoft.com/update-guide/zh-cn/vulnerability/ADV180002)
