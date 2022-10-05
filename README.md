@@ -8,7 +8,7 @@
 ## 01. 简介
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1cT411F7f4/)
-  - [YouTube](https://youtu.be/JNY-7zWGhOg)
+  - [YouTube](https://youtu.be/Y6pdQGDOVA4)
 - 材料
   - [PPT](Resources/01.pptx)
   - [虚拟地址空间 - Windows drivers | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/virtual-address-spaces)
@@ -53,7 +53,8 @@
 
 ## 05. 探索页表
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1vG411b7ep/)
+  - [bilibili](https://www.bilibili.com/video/BV1vG411b7ep/)
+  - [YouTube](https://youtu.be/-fUV4nj6M6o)
 - 材料
   - [PPT](Resources/05.pptx)
   - [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
@@ -67,13 +68,15 @@
 
 ## 07. 编程翻译地址
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1QN4y1G7zv/)
+  - [bilibili](https://www.bilibili.com/video/BV1QN4y1G7zv/)
+  - [YouTube](https://youtu.be/GeLei8KDfhk)
 - 材料
   - [PPT](Resources/07.pptx)
 
 ## 08. 内存共享
 - 视频
-  -  [bilibili](https://www.bilibili.com/video/BV1MN4y1c7nX/)
+  - [bilibili](https://www.bilibili.com/video/BV1MN4y1c7nX/)
+  - [YouTube](https://youtu.be/yrNGGFIE07c)
 - 材料
   - [PPT](Resources/08.pptx)
   - [try-except statement (C) | Microsoft Docs](https://docs.microsoft.com/zh-cn/cpp/c-language/try-except-statement-c)
@@ -82,12 +85,14 @@
 ## 09. 自映射 前篇
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1iY4y1T7F2/)
+  - [YouTube](https://youtu.be/KHwzOlJu318)
 - 材料
   - [PPT](Resources/09.pptx)
 
 ## 10. 自映射 后篇
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1k14y1s7Aw/)
+  - [YouTube](https://youtu.be/hrkJQ80wbSs)
 - 材料
   - [PPT](Resources/10.pptx)
   - [Alex Ionescu on Twitter: "Redstone Build 14332 now adds MiRebaseDynamicRelocationRegions, and fully dynamic PTE/PDE/PXE base, with a call to SecureKernel/VSM." / Twitter](https://twitter.com/aionescu/status/725388108187852800)
@@ -95,6 +100,7 @@
 ## 11. 熔断
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1qV4y1T7Gz/)
+  - [YouTube](https://youtu.be/rRxzImUUWYc)
 - 材料
   - [PPT](Resources/11.pptx)
   - [InSpectre.exe](https://www.grc.com/inspectre.htm)
