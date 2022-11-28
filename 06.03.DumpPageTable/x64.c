@@ -44,9 +44,9 @@ DumpCurrentProcessUserPageTable()
                     "     Pa=0x%016I64X'],"
                     , n2
                     , L2pt[n2].Value
-                    , L1pt[n1].Fields.R_W
-                    , L2pt[n2].Fields.PS
-                    , L2pt[n2].Fields.PPN
+                    , L2pt[n2].Fields1GB.R_W
+                    , L2pt[n2].Fields1GB.PS
+                    , L2pt[n2].Fields1GB.PPN
                     , Pa.Value
                 );
                 continue;
@@ -60,7 +60,7 @@ DumpCurrentProcessUserPageTable()
                 "L3pt.Pa=0x%016I64X',"
                 , n2
                 , L2pt[n2].Value
-                , L1pt[n1].Fields.R_W
+                , L2pt[n2].Fields.R_W
                 , L2pt[n2].Fields.PS
                 , L2pt[n2].Fields.PPN
                 , L3ptPa.Value
@@ -81,9 +81,9 @@ DumpCurrentProcessUserPageTable()
                         "     Pa=0x%016I64X'],"
                         , n3
                         , L3pt[n3].Value
-                        , L3pt[n3].Fields.R_W
-                        , L3pt[n3].Fields.PS
-                        , L3pt[n3].Fields.PPN
+                        , L3pt[n3].Fields2MB.R_W
+                        , L3pt[n3].Fields2MB.PS
+                        , L3pt[n3].Fields2MB.PPN
                         , Pa.Value
                     );
                     continue;
