@@ -112,3 +112,13 @@
       - [GitHub - msmania/microarchitectural-attack](https://github.com/msmania/microarchitectural-attack)
   - [Black Hat USA 2018 - Meltdown Basics, Details, Consequences - YouTube](https://www.youtube.com/watch?v=Njgoed0lv0A)
   - [ADV180002 - 安全更新程序指南 - Microsoft - 用于缓解推理执行边信道漏洞的指南](https://msrc.microsoft.com/update-guide/zh-cn/vulnerability/ADV180002)
+
+## 12. KVAS：Windows Meltdown 缓解
+- 视频
+  - [bilibili](https://www.bilibili.com/video/BV1pD4y1a7hP/)
+- 材料
+  - [PPT](Resources/12.pptx)
+  - [KVA Shadow: Mitigating Meltdown on Windows](https://msrc-blog.microsoft.com/2018/03/23/kva-shadow-mitigating-meltdown-on-windows/)
+  - [Windows 10 KVAS and Software SMEP](https://wumb0.in/windows-10-kvas-and-software-smep.html)
+  - [A Deep Dive Analysis of Microsoft’s Kernel Virtual Address Shadow Feature](https://www.fortinet.com/blog/threat-research/a-deep-dive-analysis-of-microsoft-s-kernel-virtual-address-shadow-feature)
+  - [PCID & 与PTI的结合](http://happyseeker.github.io/kernel/2018/05/04/pti-and-pcid.html)
