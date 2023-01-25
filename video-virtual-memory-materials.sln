@@ -66,6 +66,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12.02.DumpShadowPageTable",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12.03.ShareMemory", "12.03.ShareMemory\12.03.ShareMemory.vcxproj", "{6720B476-8F9A-4AB2-ADC4-C6223E58F1C1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.01.TotalMeltdownTest", "13.01.TotalMeltdownTest\13.01.TotalMeltdownTest.vcxproj", "{E0C6C557-28E3-419A-B91F-7BEB8AB19683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -424,6 +426,18 @@ Global
 		{6720B476-8F9A-4AB2-ADC4-C6223E58F1C1}.Release|x86.ActiveCfg = Release|x64
 		{6720B476-8F9A-4AB2-ADC4-C6223E58F1C1}.Release|x86.Build.0 = Release|x64
 		{6720B476-8F9A-4AB2-ADC4-C6223E58F1C1}.Release|x86.Deploy.0 = Release|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|ARM64.ActiveCfg = Debug|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|ARM64.Build.0 = Debug|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|x64.ActiveCfg = Debug|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|x64.Build.0 = Debug|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|x86.ActiveCfg = Debug|Win32
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Debug|x86.Build.0 = Debug|Win32
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|ARM64.ActiveCfg = Release|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|ARM64.Build.0 = Release|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|x64.ActiveCfg = Release|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|x64.Build.0 = Release|x64
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|x86.ActiveCfg = Release|Win32
+		{E0C6C557-28E3-419A-B91F-7BEB8AB19683}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
