@@ -116,6 +116,7 @@
 ## 12. KVAS：Windows Meltdown 缓解
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1pD4y1a7hP/)
+  - [YouTube](https://youtu.be/CKTf2zUZuh4)
 - 材料
   - [PPT](Resources/12.pptx)
   - [KVA Shadow: Mitigating Meltdown on Windows](https://msrc-blog.microsoft.com/2018/03/23/kva-shadow-mitigating-meltdown-on-windows/)
@@ -126,11 +127,13 @@
 ## 13. Total Meltdown
 - 视频
   - [bilibili](https://www.bilibili.com/video/BV1LT411y739/)
+  - [YouTube](https://youtu.be/aice3G30jUg)
 - 材料
   - [PPT](Resources/13.pptx)
   - [CVE-2018-1038 - Microsoft](https://msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-1038)
   - [Ulf Frisk on Twitter: "Total Meltdown? How the Windows 7 ...](https://twitter.com/ulffrisk/status/978657135130181632)
   - [Exploiting CVE-2018-1038 - Total Meltdown](https://blog.xpnsec.com/total-meltdown-cve-2018-1038/)
-  - [cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso](ed2k://|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|/)
+  - cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso
+      - ed2k://|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|/
   - [Microsoft® Update Catalog - KB4075211](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4075211)
   - [aspxspy.aspx](https://github.com/tennc/webshell/blob/master/net-friend/aspx/aspxspy.aspx)
